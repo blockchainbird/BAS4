@@ -336,5 +336,3 @@ This paper establishes the structural prerequisites for individual Software 4.0 
 [66] Daniel M. Wolpert, Christopher R. Miall, and Mitsuo Kawato. Internal Models in the Cerebellum. Trends in Cognitive Sciences, 2(9):338–47, 1998.
 
 14
-
-Test
