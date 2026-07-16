@@ -1,0 +1,27 @@
+{
+  "specs": [
+    {
+      "title": "The Biomimetic Architecture of Software 4.0",
+      "description": "Spec-Up-T conversion of arXiv:2606.04025v1 \u2014 biomimetic architecture for Software 4.0, Recognitive, and supersoftware.",
+      "author": "Philip Sheldrake and Dirk Scheffler (converted for Spec-Up-T)",
+      "spec_directory": "./spec",
+      "spec_terms_directory": "terms-definitions",
+      "output_path": "./docs",
+      "markdown_paths": [
+        "spec-head.md",
+        "terms-and-definitions-intro.md",
+        "spec-body.md"
+      ],
+      "logo": "https://raw.githubusercontent.com/trustoverip/spec-up-t/refs/heads/master/src/install-from-boilerplate/boilerplate/static/logo.svg",
+      "logo_link": "https://arxiv.org/abs/2606.04025",
+      "favicon": "https://raw.githubusercontent.com/trustoverip/spec-up-t/refs/heads/master/src/install-from-boilerplate/boilerplate/static/favicon.ico",
+      "source": {
+        "host": "github",
+        "account": "local",
+        "repo": "new-spec-up-t-spec"
+      },
+      "external_specs": [],
+      "katex": false
+    }
+  ]
+}
