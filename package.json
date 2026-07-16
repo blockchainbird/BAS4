@@ -1,7 +1,6 @@
 {
   "name": "biomimetic-architecture-software-4.0-spec",
   "version": "0.1.0",
-  "private": true,
   "license": "Apache-2.0",
   "description": "Spec-Up-T specification and glossary converted from arXiv:2606.04025v1",
   "dependencies": {
@@ -12,8 +11,16 @@
     "edit": "node -e \"require('spec-up-t')()\"",
     "render": "node --no-warnings -e \"require('spec-up-t/index.js')({ nowatch: true })\"",
     "dev": "node -e \"require('spec-up-t')({ dev: true })\"",
-    "menu": "bash ./menu-wrapper.sh",
+    "collectExternalReferences": "node --no-warnings -e \"require('spec-up-t/src/pipeline/references/collect-external-references.js').collectExternalReferences()\"",
+    "topdf": "node -e \"require('spec-up-t/src/create-pdf.js')\"",
+    "todocx": "node -e \"require('spec-up-t/src/create-docx.js')\"",
+    "freeze": "node -e \"require('spec-up-t/src/freeze-spec-data.js')\"",
+    "references": "node -e \"require('spec-up-t/src/pipeline/references/external-references-service.js')\"",
     "help": "cat ./node_modules/spec-up-t/src/install-from-boilerplate/help.txt",
-    "healthCheck": "node --no-warnings ./node_modules/spec-up-t/src/health-check.js"
+    "menu": "bash ./menu-wrapper.sh",
+    "addremovexrefsource": "node --no-warnings -e \"require('spec-up-t/src/add-remove-xref-source.js')\"",
+    "configure": "node --no-warnings -e \"require('spec-up-t/src/configure.js')\"",
+    "healthCheck": "node --no-warnings ./node_modules/spec-up-t/src/health-check.js",
+    "custom-update": "npm update && node -e \"require('spec-up-t/src/install-from-boilerplate/custom-update.js')\""
   }
 }
